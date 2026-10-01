@@ -1,0 +1,12 @@
+# Local development: readable logs instead of JSON, SQL visible when debugging.
+logging:
+  structured:
+    format:
+      console: ""
+  level:
+    com.tickethub: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
