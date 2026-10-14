@@ -1,4 +1,4 @@
-# TicketHub
+# TicketHub -> A springBoot project
 
 Seat-level event ticket booking: browse events, pick exact seats, hold them for 5 minutes and pay, with **no seat ever sold twice**, even under concurrent demand.
 
