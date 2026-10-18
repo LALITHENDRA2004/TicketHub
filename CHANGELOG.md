@@ -4,6 +4,12 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+### Added
+- `run.bat`: one double-click starts the local MySQL service, the API and the web app without Docker.
+
+### Changed
+- Database switched from PostgreSQL 17 to MySQL 8 (driver, Flyway module, `V1__init.sql`, docker compose, Testcontainers).
+
 ## [0.1.0] - Sprint 0: Foundation
 
 ### Added

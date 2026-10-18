@@ -25,7 +25,7 @@ class TicketHubApplicationTests {
     @Test
     void flywayCreatesSchema() {
         Integer tables = jdbc.queryForObject(
-                "select count(*) from information_schema.tables where table_schema = 'public' "
+                "select count(*) from information_schema.tables where table_schema = database() "
                         + "and table_name in ('users', 'shows', 'show_seats', 'bookings', 'payments', 'tickets')",
                 Integer.class);
         assertThat(tables).isEqualTo(6);

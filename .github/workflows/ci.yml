@@ -25,7 +25,7 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-      - name: Build and test (Testcontainers Postgres + Redis)
+      - name: Build and test (Testcontainers MySQL + Redis)
         run: ./mvnw -B verify
       - name: Upload JaCoCo report
         if: always()
