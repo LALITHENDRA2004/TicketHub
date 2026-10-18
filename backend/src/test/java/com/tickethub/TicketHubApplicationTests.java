@@ -12,7 +12,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.web.servlet.assertj.MockMvcTester;
 
 @Import(TestcontainersConfiguration.class)
-@SpringBootTest
+// No mail server runs in tests, so its health check would report DOWN and fail the health assertions.
+@SpringBootTest(properties = "management.health.mail.enabled=false")
 @AutoConfigureMockMvc
 class TicketHubApplicationTests {
 
