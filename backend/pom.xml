@@ -15,7 +15,7 @@
     <description>TicketHub - seat-level event ticket booking API</description>
     <properties>
         <java.version>25</java.version>
-        <springdoc.version>3.1.1</springdoc.version>
+        <springdoc.version>3.2.0</springdoc.version>
         <mapstruct.version>1.6.3</mapstruct.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <jacoco.version>0.8.15</jacoco.version>
